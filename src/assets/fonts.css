@@ -1,0 +1,19 @@
+/* src/assets/css/font.css */
+/* 声明常规字体 */
+@font-face {
+  font-family: 'SourceHanSansCN-Medium'; /* 自定义字体名称（后续引用时使用） */
+  font-style:normal; /* 正常样式 */
+  font-weight: 400; /* 常规字重（对应Regular） */
+  /* 字体文件路径：从当前CSS文件到字体文件的相对路径 */
+  src: url('/SourceHanSansCN-Medium_2.woff') format('woff'),
+  /* 可选：添加其他格式兼容旧浏览器 */
+  /* url('../fonts/MyCustomFont-Regular.ttf') format('truetype') */
+}
+
+/* 可选：声明粗体变体（如果有） */
+@font-face {
+  font-family: 'SourceHanSansCN-Normal'; /* 与常规字体同名，通过weight区分 */
+  font-style: normal;
+  font-weight: 700; /* 粗体字重（对应Bold） */
+  src: url('/SourceHanSansCN-Normal_1.woff') format('woff'),
+}
