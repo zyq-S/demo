@@ -28,7 +28,7 @@ export default {
     return {
       slogon1: "盾护沃野 共享未来",
       slogon2: "SHIELD THE FIELDS SHARE THE FUTURE",
-      backgroundUrl: "/src/assets/image/banner-about.jpg",
+      backgroundUrl: "../../../assets/image/banner-about.jpg",
       title1: "联系我们",
       title2: "CONTACT",
       content: "欢迎与我们取得联系，我们将竭诚为您服务",
