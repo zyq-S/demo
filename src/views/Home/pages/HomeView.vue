@@ -50,6 +50,7 @@
 import Banner from "../../../components/common/Banner.vue";
 import ConrenrtItem from "../components/ContentItem.vue";
 import Titles from "@/components/common/Titles.vue";
+
 export default {
   name: "HomeView",
   components: {
@@ -61,7 +62,7 @@ export default {
     return {
       slogon1: "盾护沃野 共享未来",
       slogon2: "SHIELD THE FIELDS SHARE THE FUTURE",
-      backgroundUrl: "/src/assets/image/banner-home.jpg",
+      backgroundUrl: new URL("/src/assets/image/banner-home.jpg", import.meta.url).href,
       title1: "企业介绍",
       title2: "INTRODUCTION",
       shareTitle1: "案例分享",
@@ -69,10 +70,10 @@ export default {
       informationTitle1: "企业信息",
       informationTitle2: "INFORMATION",
       cards: [
-        { title: "组合方案", url: "/src/assets/image/anli-1.jpg" },
-        { title: "水稻杂草", url: "/src/assets/image/anli-2.jpg" },
-        { title: "虫害案例", url: "/src/assets/image/anli-3.jpg" },
-        { title: "病害案例", url: "/src/assets/image/anli-4.jpg" },
+        { title: "组合方案", url: new URL("/src/assets/image/anli-1.jpg", import.meta.url).href },
+        { title: "水稻杂草", url: new URL("/src/assets/image/anli-2.jpg", import.meta.url).href },
+        { title: "虫害案例", url: new URL("/src/assets/image/anli-3.jpg", import.meta.url).href },
+        { title: "病害案例", url: new URL("/src/assets/image/anli-4.jpg", import.meta.url).href },
       ],
       content1:
         "河南盾护农业科技是一家创新的作物保护企业，依托中国完善的供应链体系服务全球农化市场。公司拥有3座现代化制剂工厂、300多个中国农药登记证ICAMA，员工总数超过500人。我们专注于农药制剂生产、出口与综合解决方案的提供，通过合规高效的解决方案帮助客户缩短市场准入时间、降低采购成本。凭借研发创新与绿色生产实力，盾护科技正成为全球农户和合作伙伴值得信赖的植保伙伴。",
