@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <Banner :slogon1="slogon1" :slogon2="slogon2" :backgroundUrl="backgroundUrl" />
-    <img :src="new URL('../../../assets/image/address.jpg', import.meta.url).href" alt="" />
+    <img src="../../../assets/image/address.jpg" alt="" />
     <div class="card">
       <div class="card-left">
         <Titles :title1="title1" :title2="title2" />
