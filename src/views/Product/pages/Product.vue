@@ -50,7 +50,7 @@ export default {
     return {
       slogon1: "盾护沃野 共享未来",
       slogon2: "SHIELD THE FIELDS SHARE THE FUTURE",
-      backgroundUrl: "/src/assets/image/banner-product.jpg",
+      backgroundUrl: new URL("/src/assets/image/banner-product.jpg", import.meta.url).href,
       title1: "快速查寻",
       title2: "SEARCH",
       listData: listData,
